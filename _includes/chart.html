@@ -1,0 +1,11 @@
+{%- comment -%}
+Chart section scaffold. Usage:
+  {% include chart.html id="my-chart" title="My title" caption="Optional caption." %}
+Then in the post (with `d3: true` in front matter), draw into [data-chart="my-chart"]
+inside a DOMContentLoaded handler using the ChartTheme helpers.
+{%- endcomment -%}
+<figure class="chart"{% if include.id %} id="chart-{{ include.id }}"{% endif %}>
+  {%- if include.title %}<h3 class="chart-title">{{ include.title }}</h3>{% endif -%}
+  <div class="chart-plot" data-chart="{{ include.id }}"></div>
+  {%- if include.caption %}<figcaption class="chart-caption">{{ include.caption }}</figcaption>{% endif -%}
+</figure>

@@ -1,0 +1,84 @@
+/* Chart sections. Loaded on pages with `d3: true`. Reuses tokens from style.css. */
+
+.chart {
+  --chart-plot-bg: #fdfcf9;
+  margin: 2.75rem 0;
+  padding: 1.25rem 1.25rem 1rem;
+  background: #eceae1;
+  border-radius: 16px;
+}
+
+.chart-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  text-align: center;
+  margin: 0.4rem 0 1.1rem;
+  color: var(--text);
+}
+
+.chart-plot {
+  background: var(--chart-plot-bg);
+  border-radius: 12px;
+  padding: 1rem 1rem 0.6rem;
+}
+
+.chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chart-caption {
+  margin-top: 0.9rem;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Axes */
+.chart .axis text,
+.chart .tick text {
+  fill: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 12px;
+}
+
+.chart .axis path,
+.chart .axis line {
+  stroke: var(--border);
+}
+
+.chart .grid .tick line {
+  stroke: var(--border);
+}
+
+.chart .grid path {
+  stroke: none;
+}
+
+/* Legend */
+.chart .legend text {
+  fill: var(--text);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  dominant-baseline: middle;
+}
+
+/* Tooltip (appended to <body>) */
+.chart-tooltip {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  background: var(--text);
+  color: #fdfcf9;
+  font: 12px var(--font-sans);
+  line-height: 1.45;
+  padding: 6px 9px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  white-space: nowrap;
+}
