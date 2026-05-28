@@ -4,6 +4,7 @@ title: "The Shape of Complexity"
 date: 2026-05-27
 d3: true
 description: "A visual tour through the math, the metaphors, and the moves that keep complex systems alive."
+wip: true
 ---
 
 <p class="deck">A visual tour through the math, the metaphors, and the moves that keep complex systems alive.</p>
