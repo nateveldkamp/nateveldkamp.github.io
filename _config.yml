@@ -5,6 +5,11 @@ author: Nate Veldkamp
 
 markdown: kramdown
 permalink: /:title/
+
+collections:
+  wip:
+    output: true
+    permalink: /wip/:name/
 paginate: 10
 
 exclude:
