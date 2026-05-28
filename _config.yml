@@ -4,7 +4,7 @@ url: https://nateveldkamp.github.io
 author: Nate Veldkamp
 
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 paginate: 10
 
 exclude:
